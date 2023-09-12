@@ -71,7 +71,7 @@ const q05 = () => {
 
   var num1 = parseInt(prompt(`Q05. １つ目の数値を入力`));
   var num2 = parseInt(prompt(`Q05. ２つ目の数値を入力`));
-  console.log(num1 % num2)
+  console.log( num1 + " % " + num2 + " = " + (num1 % num2))
 
 
 }
@@ -86,10 +86,12 @@ const q06 = () => {
 
   var num1 = parseInt(prompt(`Q06. １つ目の数値を入力`));
   var num2 = parseInt(prompt(`Q06. ２つ目の数値を入力`));
-  console.log(num1 + num2)
-  console.log(num1 - num2)
-  console.log(num1 * num2)
-  console.log(num1 / num2)
+  console.log("１つ目の数値:" + num1)
+  console.log("２つ目の数値:" + num2)
+  console.log("和:" + (num1 + num2))
+  console.log("差:" + (num1 - num2))
+  console.log("積:" + (num1 * num2))
+  console.log("商:" + (num1 / num2))
   
 }
 
@@ -101,11 +103,10 @@ const q07 = () => {
   // ----------------------------------------
   console.log(`07. 金額と消費税率を入力して、消費税の金額をコンソールに表示する`);
 
-  var num1 = parseInt(prompt(`Q07. 金額を入力`));
-  var num2 = parseInt(prompt(`Q07. 消費税率を入力（%）`));
-  console.log(num1 * num2 / 100)
-
-
+  let num1 = parseInt(prompt(`Q07. 金額を入力`));
+  let num2 = (parseInt(prompt(`Q07. 消費税率を入力（%）`))/100);
+  console.log("金額:" + num1)
+  console.log("消費税:" + (num1 * num2 ))
 
 }
 
@@ -115,7 +116,7 @@ const q08 = () => {
   // ----------------------------------------
   // 08. 円の面積
   // ----------------------------------------
-  console.log(`08. 半径を入力して、円の面積をコンソールに表示する`);
+    //console.log(`08. 半径を入力して、円の面積をコンソールに表示する`);
 
   var num1 = parseInt(prompt(`Q08. 円の半径を入力`));
   console.log("面積は " + num1 * num1 * 3.14)
