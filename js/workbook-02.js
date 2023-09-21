@@ -80,7 +80,7 @@ const q13 = () => {
   // ----------------------------------------
   // 13. 入園料の計算
   // ----------------------------------------
-  console.log(`13. 入園人数を入力して、その入園料金をコンソールに表示する\r\n入園料：１人８００円、５人以上のグループなら１人７６０円、２０人以上の団体なら１人５００円`);
+  //console.log(`13. 入園人数を入力して、その入園料金をコンソールに表示する\r\n入園料：１人８００円、５人以上のグループなら１人７６０円、２０人以上の団体なら１人５００円`);
 
   let num1 = prompt(`Q13. 入園者数を入力`);
   if (num1 >= 20) {
@@ -110,26 +110,15 @@ const q14 = () => {
   if (num1 >= 75) {
     console.log("出席率：" + num1);
     console.log("評価点：" + num2);
-    console.log("判定　：F");
     if (num2 >= 90) {
-      console.log("出席率：" + num1);
-      console.log("評価点：" + num2);
       console.log("判定　：A");
     } else if (num2 >= 80) {
-      console.log("出席率：" + num1);
-      console.log("評価点：" + num2);
       console.log("判定　：B");
     } else if (num2 >= 70) {
-      console.log("出席率：" + num1);
-      console.log("評価点：" + num2);
       console.log("判定　：C");
     } else if (num2 >= 60) {
-      console.log("出席率：" + num1);
-      console.log("評価点：" + num2);
       console.log("判定　：D");
     } else {
-      console.log("出席率：" + num1);
-      console.log("評価点：" + num2);
       console.log("判定　：F");
     }
   } else {
